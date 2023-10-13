@@ -1,0 +1,115 @@
+$tablet: "700px";
+$mobile: "395px";
+
+@media (min-width: $mobile) and (max-width: $tablet) {
+  nav {
+    padding: 0.5rem;
+    a {
+      font-size: x-large;
+    }
+    .logoContainer {
+      p {
+        font-size: 1.7rem;
+      }
+    }
+  }
+  .cart {
+    flex-direction: column;
+    .cartMath {
+      padding: 2rem;
+      width: 100%;
+      border-bottom-left-radius: 0;
+      border-top-left-radius: 0;
+    }
+    .cartItems {
+      width: 100%;
+      .titles {
+        h3 {
+          font-size: 1.2rem;
+        }
+        p {
+          font-size: medium;
+        }
+      }
+
+      button {
+        padding: 0.3rem;
+        min-width: 2rem;
+        font-size: large;
+        svg {
+          size: 0.4rem;
+        }
+      }
+      span {
+        font-size: x-large;
+      }
+      > div {
+        padding: 1rem;
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  nav {
+    a {
+      font-size: large;
+    }
+    .logoContainer {
+      img {
+        width: 2.4rem;
+      }
+      p {
+        font-size: 1.5rem;
+      }
+    }
+    .linkContainer {
+      justify-content: flex-end;
+      gap: 1rem;
+      svg {
+        width: 2rem;
+      }
+    }
+    span {
+      font-size: smaller;
+    }
+  }
+  .cart {
+    flex-direction: column;
+    .cartMath {
+      padding: 1rem;
+      width: 100%;
+      font-size: 1.8rem;
+      border-bottom-left-radius: 0;
+      border-top-left-radius: 0;
+    }
+    .cartItems {
+      width: 100%;
+      .titles {
+        h3 {
+          font-size: 1rem;
+        }
+        p {
+          font-size: small;
+        }
+      }
+      .btnContainer {
+        gap: 0.5rem;
+      }
+      button {
+        padding: 0.2rem;
+        min-width: 1.5rem;
+        font-size: medium;
+        svg {
+          size: 0.4rem;
+        }
+      }
+      span {
+        font-size: large;
+      }
+      > div {
+        padding: 1rem 0.7rem;
+      }
+    }
+  }
+}
