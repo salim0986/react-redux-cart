@@ -67,10 +67,10 @@ export const shoppingData = [
   },
   {
     id: "radfgljlkhf",
-    name: "Nike Air",
+    name: "New Shoes",
     price: 18000,
     qty: 1,
-    img: { shoe },
+    img: "https://images-cdn.ubuy.co.in/63cafe77db6fc709a4389363-new-style-men-39-s-shoes-breathable.jpg",
     tax: 200,
     shipping: 100,
   },
